@@ -85,7 +85,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    padding: 2em 10em;
+    padding: 4em 10em;
     transition: box-shadow 500ms ease-in-out;
 }
 
