@@ -85,7 +85,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    padding: 4em 10em;
+    padding: 2em 10em;
     transition: box-shadow 500ms ease-in-out;
 }
 
@@ -127,6 +127,12 @@ body {
 .primary-navigation a {
     text-decoration: none;
     color: var(--Dark-grayish-blue);
+    transition: 250ms;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus {
+    color: var(--Soft-red);
 }
 
 @media (max-width:  480px) {
@@ -227,6 +233,12 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 600;
+    transition: 250ms;
+}
+
+#read-more:hover,
+#read-more:focus {
+    background-color: var(--Very-dark-blue);
 }
 
 .right {
@@ -252,14 +264,23 @@ body {
     padding-bottom: 1.5em;
 }
 
-.new-details h3{
+.new-details a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
     color: var(--Off-white);
-    margin-bottom: .5em;
+    transition: 250ms;
+}
+
+.new-details a:hover,
+.new-details a:focus {
+    color: var(--Soft-orange);
 }
 
 .new-details p {
     color: var(--Grayish-blue);
     line-height: 1.5em;
+    margin-top: .5em;
 }
 
 #last {
@@ -303,10 +324,15 @@ body {
         grid-row-end: 5;
         margin-block: 1em;
     }
+
+    .box {
+        margin-top: 0;
+    }
 }
 
 .box {
     align-items: center;
+    margin-top: 1.5em;
 }
 
 .box-image {
@@ -328,9 +354,17 @@ body {
     margin: 0;
 }
 
-.box-right h5 {
+.box-right a {
+    text-decoration: none;
+    font-weight: 600;
     color: var(--Very-dark-blue);
     font-size: 1.2rem;
+    transition: 250ms;
+}
+
+.box-right a:hover,
+.box-right a:focus {
+    color: var(--Soft-red);
 }
 
 .box-right p {
