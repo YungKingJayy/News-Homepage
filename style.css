@@ -348,7 +348,7 @@ body {
     --gap: 10px;
 }
 
-.box-right h4{
+.box-right h3{
     color: var(--Grayish-blue);
     font-size: 2rem;
     margin: 0;
